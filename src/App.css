@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button{
+    padding: .6rem;
+    background-color: #536872; 
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: .7rem 0;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+button:hover{
+    background-color: #708090;
+    transition: .5s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img{
+    max-width: 100%;
+    border-radius: 5px;
+    margin:.5rem 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a{
+    text-decoration: none;
+    color: #536872;
+}
+
+.App{
+    width: 90%;
+    margin:2rem auto;
+    text-align: center;
+}
+
+.search-form{
+    margin: 2rem;
+}
+
+.recipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.recipe{
+  width: 300px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin:1rem .5rem;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.ingredient-list{
+    padding: 1rem;
+    list-style:none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ingredient-text{
+    color: #536872;
+}
+
+.ingredient-weight{
+    color: #708090;
+}
+.alert{
+    background-color: orangered;
+    margin-bottom: .5rem; 
+}
+
+input{
+    padding: .5rem;
 }
